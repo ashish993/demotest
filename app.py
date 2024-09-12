@@ -11,6 +11,7 @@ az_key = st.secrets["az_key"]
 computervision_client = ComputerVisionClient('https://aianalysisimage1209-prediction.cognitiveservices.azure.com/', CognitiveServicesCredentials(az_key))
 
 def analyze_image(image):
+    
     return analysis
 
 
@@ -28,7 +29,7 @@ if uploaded_file is not None:
     st.write("")
     st.write("Classifying...")
     analysis = analyze_image(image)
-    display_analysis(analysis)
+    #display_analysis(analysis)
 
 elif url:
     try:

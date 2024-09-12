@@ -7,7 +7,8 @@ from msrest.authentication import CognitiveServicesCredentials
 
 az_key = st.secrets["az_key"]
 # Initialize Computer Vision Client
-computervision_client = ComputerVisionClient('https://cvdrlee.cognitiveservices.azure.com/', CognitiveServicesCredentials(az_key))
+#https://aianalysisimage1209-prediction.cognitiveservices.azure.com/
+computervision_client = ComputerVisionClient('https://aianalysisimage1209-prediction.cognitiveservices.azure.com/', CognitiveServicesCredentials(az_key))
 
 def analyze_image(image):
     return analysis
